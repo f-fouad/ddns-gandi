@@ -1,0 +1,9 @@
+[Unit]
+Description=periodically run dns_update.sh
+
+[Timer]
+OnBootSec=3min
+OnUnitActiveSec=5min
+
+[Install]
+WantedBy=timers.target
