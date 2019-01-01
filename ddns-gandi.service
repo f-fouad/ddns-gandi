@@ -1,0 +1,8 @@
+[Unit]
+Description=Check for ip changes and update A record if needed
+
+[Service]
+ExecStart=/usr/local/bin/dns_update.sh
+
+[Install]
+WantedBy=basic.target
